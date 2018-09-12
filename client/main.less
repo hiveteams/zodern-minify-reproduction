@@ -1,0 +1,215 @@
+// Wrap in media screen so we can have
+// media print stylesheet working.
+@media screen {
+  // detect browser mixins
+  @import "{}/imports/ui/stylesheets/util/browser.less";
+
+  // global styling for dropdowns
+  @import '{}/imports/ui/stylesheets/drodpown.less';
+
+  @import "{}/imports/ui/stylesheets/reset.less";
+  // Bootstrap override
+  @import '{}/imports/ui/stylesheets/bootstrap-override.less';
+  // magnific popup override
+  @import '{}/imports/ui/stylesheets/magnific-override.less';
+  // Global namespace
+  @import "{}/imports/ui/stylesheets/base.less";
+  @import '{}/imports/ui/stylesheets/button.less';
+  @import '{}/imports/ui/stylesheets/form.less';
+  @import '{}/imports/ui/stylesheets/layout.less';
+  @import '{}/imports/ui/stylesheets/link.less';
+  @import '{}/imports/ui/stylesheets/mobile.less';
+  @import '{}/imports/ui/stylesheets/hv-modal.less';
+  @import '{}/imports/ui/stylesheets/hv-thumbnail.less';
+  @import '{}/imports/ui/stylesheets/actions.less';
+  @import '{}/imports/ui/stylesheets/custom-workspace-styling.less';
+  @import '{}/imports/ui/stylesheets/bootstrap-tagsinput.less';
+  @import '{}/imports/ui/stylesheets/hive-modal.less';
+
+  // Hive icons
+  @import "{}/imports/ui/stylesheets/hivecons.less";
+
+  // Popover styling
+  @import '{}/imports/ui/stylesheets/hv-popover.less';
+
+  // Process Popup
+  @import '{}/imports/ui/stylesheets/process-popup.less';
+
+  // Profile card
+  @import '{}/imports/ui/stylesheets/profile-card.less';
+
+  // Slim card syling
+  @import '{}/imports/ui/stylesheets/slim-card.less';
+
+  // Misc
+  // @import '{}/imports/ui/stylesheets/misc/connect-google.less';
+
+  // Emoji-mart picker
+  @import "{}/imports/ui/stylesheets/emoji-mart.less";
+
+  // Trial box
+  @import '{}/imports/ui/stylesheets/trial.less';
+
+  // Global components
+  @import '{}/imports/ui/stylesheets/notification.less';
+  @import '{}/imports/ui/components/client/welcome-message/welcome-message.less';
+  @import "{}/imports/ui/components/client/avatar/avatar.less";
+  @import "{}/imports/ui/components/client/message-item/message-item.less";
+  @import "{}/imports/ui/components/client/picker/picker.less";
+  @import "{}/imports/ui/pages/client/pipelines/pipeline-picker.less";
+  @import "{}/imports/ui/components/client/multi-people-picker/multi-people-picker.less";
+  @import "{}/imports/ui/components/client/date-range-filter/sort-view-by-dropdown.less";
+  @import "{}/imports/ui/components/client/facebook-loading/facebook-loading.less";
+
+  // Individual components
+  @import "{}/imports/ui/components/loading.less";
+  @import "{}/imports/ui/pages/client/top-nav/top-nav.less";
+  @import "{}/imports/ui/pages/client/top-nav/search.less";
+  @import "{}/imports/ui/pages/client/dashboard/dashboard.less";
+  @import "{}/imports/ui/pages/client/groups-panel/groups-panel.less";
+  @import "{}/imports/ui/pages/client/group-thumb/group-thumb.less";
+  @import "{}/imports/ui/pages/client/messages-panel/messages-panel.less";
+  @import "{}/imports/ui/pages/client/notes-panel/notes-panel.less";
+  @import "{}/imports/ui/pages/client/note-thumb/note-thumb.less";
+  @import "{}/imports/ui/pages/client/notes/note-item.less";
+  @import "{}/imports/ui/pages/client/edit-note/edit-note.less";
+  @import "{}/imports/ui/pages/client/api/api-info-modal.less";
+  @import "{}/imports/ui/pages/client/integrations-modal/zapier.import.less";
+  @import "{}/imports/ui/pages/client/calendar/action-calendar.less";
+  @import "{}/imports/ui/pages/client/calendar/calendar-project.less";
+  @import "{}/imports/ui/pages/client/action-grid/action-grid.less";
+  @import "{}/imports/ui/pages/client/mastery/mastery-list.less";
+  @import '{}/imports/ui/stylesheets/label-manager.less';
+  @import '{}/imports/ui/pages/client/new-project/new-project.less';
+  @import '{}/imports/ui/pages/client/label-modal/label-modal.less';
+  @import '{}/imports/ui/pages/client/user-management/user-management.less';
+  @import '{}/imports/ui/react/client/components/Modals/react-modal.less';
+  @import '{}/imports/ui/pages/client/import-tasks/import-tasks.less';
+  @import '{}/imports/ui/pages/client/project-navigator/project-navigator.less';
+  @import '{}/imports/ui/pages/client/gantt/gantt.less';
+  @import '{}/imports/ui/pages/client/forms/forms_modal.less';
+  @import '{}/imports/ui/pages/client/home-page/home_page.less';
+  @import '{}/imports/ui/pages/client/home-page/post_item.less';
+  @import '{}/imports/ui/pages/client/home-page/post_comment_item.less';
+  @import '{}/imports/ui/pages/client/home-page/links.less';
+  @import '{}/imports/ui/pages/client/home-page/post-item-modal.less';
+  @import '{}/imports/ui/pages/client/add-teammates/external-users-invite.less';
+  @import '{}/imports/ui/components/client/progress-bar/progress-bar.less';
+  @import '{}/imports/ui/components/client/zoom-link/zoom-link.less';
+
+  // Sign in
+  @import "{}/imports/ui/pages/client/signin/signin.less";
+
+  // Onboarding
+  @import "{}/imports/ui/pages/client/onboarding/onboarding-wrapper.less";
+  @import "{}/imports/ui/pages/client/onboarding/video.less";
+  @import "{}/imports/ui/pages/client/onboarding/info.less";
+  @import "{}/imports/ui/pages/client/onboarding/actions.less";
+  @import "{}/imports/ui/pages/client/onboarding/createWorkspace.less";
+  @import "{}/imports/ui/pages/client/onboarding/organizationCategories.less";
+  @import "{}/imports/ui/pages/client/onboarding/teammates.less";
+  @import "{}/imports/ui/pages/client/onboarding/messaging.less";
+  @import "{}/imports/ui/pages/client/onboarding/firstProject.less";
+  @import "{}/imports/ui/pages/client/onboarding/files.less";
+
+  // Actions panel
+  @import "{}/imports/ui/pages/client/action-panel/action-panel.less";
+  @import "{}/imports/ui/pages/client/action-form/action-form.less";
+  @import "{}/imports/ui/pages/client/action-panel/action-item.less";
+
+  // Files panel
+  @import "{}/imports/ui/pages/client/files-panel/files-panel.less";
+
+  // Welcome modal
+  @import "{}/imports/ui/pages/client/welcome-modal/welcome-modal.less";
+
+  // Kanban
+  @import "{}/imports/ui/pages/client/kanban/kanban.less";
+
+  // notifications
+  @import "{}/imports/ui/stylesheets/notifications.less";
+
+  // pnotify
+  @import "{}/imports/ui/stylesheets/pnotify.import.less";
+  @import "{}/imports/ui/stylesheets/custom-pnotify.import.less";
+
+  // groupModal
+  @import "{}/imports/ui/stylesheets/groupModal.less";
+
+  // admin
+  @import "{}/imports/ui/pages/client/admin/admin.less";
+
+  // admin
+  @import "{}/imports/ui/pages/client/admin/admin.less";
+
+  // action view picker
+  @import "{}/imports/ui/pages/client/action-view-picker/action-view-picker.less";
+  @import "{}/imports/ui/pages/client/action-view-picker/project_header.less";
+
+  //action view form
+  @import "{}/imports/ui/pages/client/action-view-form/action-view-form.less";
+
+  // duration
+  @import "{}/imports/ui/components/client/duration_dropdown/duration_dropdown.less";
+
+  //ical sync modal
+  @import "{}/imports/ui/components/client/ical-sync-modal/ical-sync-modal.less";
+
+  // daterange picker
+  @import "{}/imports/ui/lib/daterange-picker/daterange-picker.less";
+
+  // color-list-picker
+  @import "{}/imports/ui/pages/client/color-list-dropdown/color-list-dropdown.less";
+
+  // google drive picker
+  @import "{}/imports/ui/components/client/google-drive-picker/google-drive-picker.less";
+
+  // zenefits + slack sync page
+  @import '{}/imports/ui/stylesheets/sync-page.less';
+
+  // connect slack button
+  @import '{}/imports/ui/components/client/connect-slack/connect-slack.less';
+
+  // connect zoom button
+  @import '{}/imports/ui/components/client/connect-zoom/connect-zoom.less';
+
+  // connect zoom button
+  @import '{}/imports/ui/components/client/connect-zoom/connect-zoom.less';
+
+  // new workspace modal
+  @import '{}/imports/ui/pages/client/new-workspace/new-workspace-modal.less';
+
+  // desktop app redirect
+  @import '{}/imports/ui/pages/client/redirect/redirect.less';
+
+  // Comment loader bar
+  @import '{}/imports/ui/components/client/simple-loader/simple-loader.less';
+
+  // analytics modal
+  @import '{}/imports/ui/pages/client/analytics/analytics-modal.less';
+
+  // resourcing
+  @import '{}/imports/ui/pages/client/resourcing/resourcing.less';
+}
+
+@media print {
+  @import "{}/imports/ui/stylesheets/print.less";
+}
+
+@import "{}/imports/ui/stylesheets/keyframes.less";
+
+// time tracking
+@import '{}/imports/ui/pages/client/time-tracking/time-tracking.less';
+
+// time tracking data table
+@import '{}/imports/ui/react/client/components/DataTable/data-table.less';
+
+// sortable input list
+@import '{}/imports/ui/react/client/components/InputList/InputList.less';
+
+// table view
+@import '{}/imports/ui/pages/client/table-view/table-view.less';
+
+// Quill
+@import "{}/imports/ui/stylesheets/quill/darcula.min.less";
+@import "{}/imports/ui/stylesheets/quill/quill.bubble.min.less";

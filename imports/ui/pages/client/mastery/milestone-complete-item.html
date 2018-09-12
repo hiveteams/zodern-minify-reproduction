@@ -1,0 +1,11 @@
+<template name="milestoneCompleteItem">
+  {{#if milestone}}
+    <li class="ob-item ob-item-complete js-ob-item">
+      <div class="ob-item-info js-show-hint">
+        <div class="ob-check-mark-container"><i class="fa fa-check ob-check-mark"></i></div>
+        <span class="ob-item-title">{{{milestone.text}}}</span>
+      </div>
+      <div class="ob-item-drawer ob-item-drawer-open ob-item-completed-text">{{{milestone.completedText}}}</div>
+    </li>
+  {{/if}}
+</template>

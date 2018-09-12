@@ -1,0 +1,12 @@
+<template name="milestoneCompleteList">
+  {{#if milestones}}
+  <div id="milestoneCompleteList">
+    <ul class="dropdown-menu ob-list">
+      {{#each milestone in milestones}}
+        <div></div>
+        <!-- {{> milestoneCompleteItem milestone=milestone index=@index}} -->
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+</template>

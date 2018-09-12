@@ -1,0 +1,39 @@
+<template name="onboardingList">
+  <div id="onboardingList" class="dropdown-menu">
+    {{#if firstVisit}}
+      <div id="firstVisit">
+        <h4>Welcome to Hive! <span class="tada"></span></h4>
+        <p>Use this guided checklist to learn how to supercharge your productivity with Hive, and you'll be a certified Hive
+          Master in no time.
+        </p>
+
+        <div class="btn btn-warning js-get-started">
+          Get started <i class="fa fa-arrow-right"></i>
+        </div>
+      </div>
+    {{else}}
+      <ul class="ob-list">
+
+        {{#each item in obItems}}
+          <li class="ob-item {{obItemCompleteClass item}} js-ob-item">
+            <div class="ob-item-info js-show-hint">
+              <div class="ob-check-mark-container"><i class="fa fa-check ob-check-mark"></i></div>
+              <span class="ob-item-title">{{{item.text}}}</span>
+            </div>
+            {{#if item.hint}}
+              <div class="ob-item-drawer ob-item-hint">{{{item.hint}}}</div>
+            {{/if}}
+          </li>
+        {{/each}}
+
+        {{#if allMilestonesComplete}}
+          <li class="ob-complete ob-item text-center">
+            <div class="ob-complete-text">Congratulations on completing onboarding!</div>
+            <a class="ob-hide-panel js-ob-hide-panel">Hide this panel</a>
+          </li>
+        {{/if}}
+
+      </ul>
+    {{/if}}
+  </div>
+</template>
