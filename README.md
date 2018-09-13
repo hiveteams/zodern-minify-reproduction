@@ -1,11 +1,17 @@
-# Simple Todo List
+# Zodern Minify Reproduction
 
-The Meteor Tutorial app.
+To start app run:
+```
+meteor run --production
+```
 
-Use it to share a single todo list with your friends. The list updates on everyone's screen in real time, and you can make tasks private if you don't want others to see them.
+## To reproduce
 
-Learn how to build this app by following the [Meteor Tutorial](http://www.meteor.com/install).
+In /client/main.js:
 
-Read more about building apps with Meteor in the [Meteor Guide](http://guide.meteor.com).
+First run the meteor app with line 4 commented out. You will see that the source maps are working correctly
+```
+line 4: import '/imports/ui/pages/client/mastery/milestone-complete-list.js';
+```
 
-![screenshot](screenshot.png)
+Now if you uncomment line 4. Source maps will now map to the wrong position in the file.
